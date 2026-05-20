@@ -16,30 +16,30 @@ Realizar manipulação de imagens para que a base de dados seja aumentada melhor
 
 As imagens foram obtidas das bases públicas:
 
-| Dataset                          | Referência | Controles | Parkinson | Total |
-|:---------------------------------|:--|----------:|----------:|--:|
-| **Spiral Drawings Dataset**      | Isenkul et al. (2017) |        15 |        62 | 77 |
-| **Improved Spiral Test Dataset** | Kursun et al. (2013) |        15 |        25 | 40 |
-| **HandPD**                       | Pereira et al. (2016a) |        18 |        74 | 92 |
-| **NewHandPD**                    | Pereira et al. (2016b) |        35 |        31 | 66 |
-| **Parkinson's Drawings**         | Kmader (2017) |       102 |       102 | 204 |
-|                                  |  |       185 |       294 | 479 |
+| Dataset                                          | Referência | Controles | Parkinson | Total |
+|:-------------------------------------------------|:--|----------:|----------:|--:|
+| **HandPD**                                       | Pereira et al. (2016a) |        18 |        74 | 92 |
+| **NewHandPD**                                    | Pereira et al. (2016b) |        35 |        31 | 66 |
+| **Parkinson's Drawings**                         | Kmader (2017) |       102 |       102 | 204 |
+|                                                  |  |       185 |       294 | 479 |
+
+Foram desconsideradas bases que montaram as imagens a partir de dados de coordenadas obtidas de canetas e tablets além 
+de imagens de desenho de ondas. Ao total, a base de dados trabalhada tem:
+
+
+|               | Espiral | Meandro | Círculo | Total |
+|:--------------|:--------|--------:|--------:|------:|
+| **Parkinson** | 471     |     420 |      31 |   922 |
+| **Controle**  | 263     |     212 |      35 |   510 |
+|               | 734     |     632 |      66 |  1432 |
+
+## ⚙️ Processamento de imangens
+
+//todo
 
 ---
 
 ### 📚 Referências
-
-### Spiral Drawings Dataset
-- ISENKUL, M. Erdem; SAKAR, Betul.  
-  *Parkinson Disease Spiral Drawings Using Digitized Graphics Tablet*.  
-  UCI Machine Learning Repository, 2017.  
-  DOI: https://doi.org/10.24432/C5Q01S
-
-### Improved Spiral Test Dataset
-- KURSUN, Olcay.  
-  *Improved Spiral Test Using Digitized Graphics Tablet for Monitoring Parkinson's Disease*.  
-  UCI Machine Learning Repository, 2013.  
-  DOI: https://doi.org/10.24432/C5HW3N
 
 ### HandPD
 - PEREIRA, C. R. et al.  

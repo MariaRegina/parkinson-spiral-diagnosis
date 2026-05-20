@@ -9,7 +9,8 @@ transform = A.Compose([
         fill=(255,255,255),
         border_mode=cv2.BORDER_CONSTANT,
         interpolation=cv2.INTER_LANCZOS4,
-        p=1.0
+        p=1.0,
+        fit_output=True
     )
 ])
 
@@ -44,16 +45,25 @@ for root, dirs, files in os.walk('../database'):
         augmented = transform(image=original)["image"]
         augmentedA = transformS(image=original)["image"]
 
-        if 'Control' in caminho:
-            print('aqui')
-            cv2.imwrite("../processed-images/Control/" + str(index) + "-rotated.jpg", augmented)
-            cv2.imwrite("../processed-images/Control/" + str(index) + "-noise.jpg", augmentedA)
-            cv2.imwrite("../processed-images/Control/" + str(index) + "-original.jpg", original)
+        typeImage = ''
+        if 'Circle' in caminho:
+            typeImage = 'Circle/'
         else:
-            cv2.imwrite("../processed-images/Parkinson/" + str(index) + "-rotated.jpg", augmented)
-            cv2.imwrite("../processed-images/Parkinson/" + str(index) + "-noise.jpg", augmentedA)
-            cv2.imwrite("../processed-images/Parkinson/" + str(index) + "-original.jpg", original)
+            if 'Meander' in caminho:
+                typeImage = 'Meander/'
+            else:
+                typeImage = 'Spiral/'
+
+        if 'Control' in caminho:
+            nome = '../processed-images/Control/' + typeImage
+        else:
+            nome = '../processed-images/Parkinson/' + typeImage
+
+        cv2.imwrite(nome + str(index) + "-rotated.jpg", augmented)
+        cv2.imwrite(nome + str(index) + "-noise.jpg", augmentedA)
+        cv2.imwrite(nome + str(index) + "-original.jpg", original)
 
         index += 1
+        break
 
 print('Processamento finalizado')
