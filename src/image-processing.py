@@ -64,6 +64,6 @@ for root, dirs, files in os.walk('../database'):
         cv2.imwrite(nome + str(index) + "-original.jpg", original)
 
         index += 1
-        break
+        # break
 
 print('Processamento finalizado')
