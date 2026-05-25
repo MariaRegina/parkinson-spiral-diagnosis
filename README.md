@@ -23,19 +23,15 @@ As imagens foram obtidas das bases públicas:
 | **Parkinson's Drawings**                         | Kmader (2017) |       102 |       102 | 204 |
 |                                                  |  |       185 |       294 | 479 |
 
-Foram desconsideradas bases que montaram as imagens a partir de dados de coordenadas obtidas de canetas e tablets além 
-de imagens de desenho de ondas. Ao total, a base de dados trabalhada tem:
+Foram desconsideradas bases que montaram as imagens a partir de dados de coordenadas obtidas de canetas, tablets além 
+de imagens de desenho de ondas.
 
+---
 
-|               | Espiral | Meandro | Círculo | Total |
-|:--------------|:--------|--------:|--------:|------:|
-| **Parkinson** | 471     |     420 |      31 |   922 |
-| **Controle**  | 263     |     212 |      35 |   510 |
-|               | 734     |     632 |      66 |  1432 |
+Os detalhes da realização do trabalho pode ser encontrados em:
+1. [Processamento de imagens](image-processing.md)
+2. [Treinamento](training.md)
 
-## ⚙️ Processamento de imangens
-
-//todo
 
 ---
 
