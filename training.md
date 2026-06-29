@@ -55,8 +55,8 @@ De forma geral, quanto menor o valor da perda, melhor o desempenho do modelo dur
 
 |        | Precision | Recall | F1-Score | Support |
 |--------------|------------|---------|-----------|----------|
-| Control      | 0.86       | 0.70    | 0.78      | 27       |
-| Parkinson    | 0.83       | 0.93    | 0.88      | 42       |
-| **Accuracy** | -          | -       | **0.84**  | 69       |
-| Macro Avg    | 0.85       | 0.82    | 0.83      | 69       |
-| Weighted Avg | 0.84       | 0.84    | 0.84      | 69       |
+| Control      | 1.00       | 0.78    | 0.88      | 27       |
+| Parkinson    | 0.88       | 1.00    | 0.93      | 42       |
+| **Accuracy** | -          | -       | **0.91**  | 69       |
+| Macro Avg    | 0.94       | 0.89    | 0.90      | 69       |
+| Weighted Avg | 0.92       | 0.91    | 0.91      | 69       |
