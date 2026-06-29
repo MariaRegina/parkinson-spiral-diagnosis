@@ -18,9 +18,8 @@ As transformações utilizadas foram:
 
 1. Redimensionamento das imagens para 224x224 pixels
 2. Rotação aleatória entre -15° e +15°
-3. Espelhamento horizontal aleatório
-4. Conversão das imagens para tensor
-5. Normalização
+3. Conversão das imagens para tensor
+4. Normalização
 
 ---
 
