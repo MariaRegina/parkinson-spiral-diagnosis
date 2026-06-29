@@ -50,7 +50,7 @@ De forma geral, quanto menor o valor da perda, melhor o desempenho do modelo dur
 
 |        Acurácia         |          Perda          |
 |:-----------------------:|:-----------------------:|
-| ![img_1.png](img_1.png) | ![img_3.png](img_3.png) |
+| <img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/d2470257-b45a-478e-b92e-168e3582f56c" /> | <img width="1000" height="400" alt="image" src="https://github.com/user-attachments/assets/d803d3be-1c86-45d4-83a2-96917bf9eeb3" /> |
 
 
 |        | Precision | Recall | F1-Score | Support |
