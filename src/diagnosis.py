@@ -24,7 +24,7 @@ TEST_DIR = '../processed-images/output/test'
 IMG_SIZE = 224
 BATCH_SIZE = 16
 EPOCHS = 20
-LEARNING_RATE = 1e-4
+LEARNING_RATE = 1e-5
 
 # ==========================================
 # TRANSFORMAÇÕES
@@ -33,7 +33,6 @@ LEARNING_RATE = 1e-4
 train_transform = transforms.Compose([
     transforms.Resize((IMG_SIZE, IMG_SIZE)),
     transforms.RandomRotation(15),
-    transforms.RandomHorizontalFlip(),
     transforms.ToTensor(),
     transforms.Normalize(
         mean=[0.485, 0.456, 0.406],
